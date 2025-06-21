@@ -2287,4 +2287,5 @@ H.tbl_flatten = vim.fn.has('nvim-0.10') == 1 and function(x) return vim.iter(x):
 H.highlight_range = function(...) vim.hl.range(...) end
 if vim.fn.has('nvim-0.11') == 0 then H.highlight_range = function(...) vim.highlight.range(...) end end
 
+MiniSurround.find_surrounding = H.find_surrounding
 return MiniSurround
